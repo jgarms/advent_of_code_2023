@@ -1,9 +1,8 @@
 package main
 
 import (
-	"bufio"
+	"advent_of_code_2023/utils"
 	"fmt"
-	"os"
 	"strings"
 )
 
@@ -37,32 +36,14 @@ func main() {
 	fmt.Println("Part two result:", result)
 }
 
-func readFileLines(filePath string) ([]string, error) {
-	file, err := os.Open(filePath)
-	if err != nil {
-		return nil, err
-	}
-	defer func(file *os.File) {
-		_ = file.Close()
-	}(file)
-
-	var lines []string
-	scanner := bufio.NewScanner(file)
-	for scanner.Scan() {
-		lines = append(lines, scanner.Text())
-	}
-	return lines, nil
-}
-
 func partOne(inputFilePath string) (int, error) {
-	lines, err := readFileLines(inputFilePath)
+	lines, err := utils.ReadFileLines(inputFilePath)
 	if err != nil {
 		return 0, err
 	}
 	total := 0
 	for _, line := range lines {
 		lineValue := parseLinePartOne(line)
-		fmt.Println(lineValue)
 		total += lineValue
 	}
 	return total, nil
@@ -149,14 +130,13 @@ func parseLinePartTwo(line string) int {
 }
 
 func partTwo(inputFilePath string) (int, error) {
-	lines, err := readFileLines(inputFilePath)
+	lines, err := utils.ReadFileLines(inputFilePath)
 	if err != nil {
 		return 0, err
 	}
 	total := 0
 	for _, line := range lines {
 		lineValue := parseLinePartTwo(line)
-		fmt.Println(lineValue)
 		total += lineValue
 	}
 	return total, nil
