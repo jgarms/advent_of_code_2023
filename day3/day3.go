@@ -198,7 +198,7 @@ func (partNumber PartNumber) GetGearCoordinate(schematic *Schematic) (Coordinate
 			}
 		}
 	}
-	return Coordinate{}, fmt.Errorf("No gear symbol found")
+	return Coordinate{}, fmt.Errorf("no gear symbol found")
 }
 
 func (partNumber PartNumber) GetValue() int {
