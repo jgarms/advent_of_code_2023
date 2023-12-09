@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3ae5e35-73e7-44cf-8723-e89635293ab3" name="Changes" comment="">
+    <list default="true" id="a3ae5e35-73e7-44cf-8723-e89635293ab3" name="Changes" comment="Fix warning">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day4/day4.go" beforeDir="false" afterPath="$PROJECT_DIR$/day4/day4.go" afterDir="false" />
     </list>
@@ -72,6 +72,21 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fix warnings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix warnings" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
