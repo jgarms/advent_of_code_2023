@@ -101,11 +101,11 @@ func parseCard(line string) (Card, error) {
 	}
 	winningNumbers, err := parseNumbers(winnersAndPlaying[0])
 	if err != nil {
-		return Card{}, fmt.Errorf("could not parse numbers 's'", winnersAndPlaying[0])
+		return Card{}, fmt.Errorf("could not parse numbers '%s'", winnersAndPlaying[0])
 	}
 	playingNumbers, err := parseNumbers(winnersAndPlaying[1])
 	if err != nil {
-		return Card{}, fmt.Errorf("could not parse numbers 's'", winnersAndPlaying[1])
+		return Card{}, fmt.Errorf("could not parse numbers '%s'", winnersAndPlaying[1])
 	}
 	return Card{
 		WinningNumbers: winningNumbers,
